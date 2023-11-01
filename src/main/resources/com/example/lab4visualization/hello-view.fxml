@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="395.0" prefWidth="498.0" spacing="20.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab4visualization.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="188.0" prefWidth="368.0">
+         <children>
+            <Text layoutX="80.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
+            <Text layoutX="70.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" />
+            <Text layoutX="74.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
+            <Text layoutX="128.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" />
+            <Text layoutX="143.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
+            <Text layoutX="164.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" />
+            <Text layoutX="315.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
+            <Text layoutX="284.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
+            <Text layoutX="315.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
+            <Text layoutX="204.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8" />
+            <Text layoutX="219.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" />
+            <Text layoutX="228.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
+            <Button fx:id="button1" layoutY="80.0" mnemonicParsing="false" onAction="#onButton1Click" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 20;" text="1" textAlignment="CENTER" />
+            <Button fx:id="button2" layoutX="140.0" mnemonicParsing="false" onAction="#onButton2Click" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 20;" text="2" textAlignment="CENTER" />
+            <Button fx:id="button3" layoutX="100.0" layoutY="80.0" mnemonicParsing="false" onAction="#onButton3Click" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 20;" text="3" textAlignment="CENTER" />
+            <Button fx:id="button4" layoutX="140.0" layoutY="146.0" mnemonicParsing="false" onAction="#onButton4Click" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 20;" text="4" textAlignment="CENTER" />
+            <Button fx:id="button5" layoutX="255.0" layoutY="14.0" mnemonicParsing="false" onAction="#onButton5Click" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 20;" text="5" textAlignment="CENTER" />
+            <Button fx:id="button6" layoutX="255.0" layoutY="146.0" mnemonicParsing="false" onAction="#onButton6Click" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 20;" text="6" textAlignment="CENTER" />
+            <Button fx:id="button7" layoutX="327.0" layoutY="80.0" mnemonicParsing="false" onAction="#onButton7Click" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 20;" text="7" textAlignment="CENTER" />
+            <Line fx:id="from6to7" endX="38.0" endY="-15.0" layoutX="295.0" layoutY="129.0" startX="-2.0" startY="27.0" />
+            <Line fx:id="from5to7" endY="59.0" layoutX="333.0" layoutY="27.0" startX="-43.0" startY="21.0" />
+            <Line fx:id="from5to6" endX="-15.0" endY="66.0" layoutX="290.0" layoutY="80.0" startX="-15.0" startY="-26.0" />
+            <Line fx:id="from4to6" endX="54.0" endY="-55.0" layoutX="201.0" layoutY="221.0" startX="-21.0" startY="-55.0" />
+            <Line fx:id="from4to3" endX="-58.0" endY="-10.0" layoutX="184.0" layoutY="130.0" startX="-38.0" startY="21.0" />
+            <Line fx:id="from3to5" endX="68.0" endY="-78.0" layoutX="189.0" layoutY="122.0" startX="-50.0" startY="-29.0" />
+            <Line fx:id="from3to2" endX="-25.0" endY="-80.0" layoutX="180.0" layoutY="120.0" startX="-51.0" startY="-39.0" />
+            <Line fx:id="from2to6" endX="60.0" endY="97.0" layoutX="201.0" layoutY="55.0" startX="-35.0" startY="-15.0" />
+            <Line fx:id="from2to5" endX="51.0" endY="6.0" layoutX="204.0" layoutY="28.0" startX="-24.0" startY="-8.0" />
+            <Line fx:id="from1to4" endX="40.0" endY="31.0" layoutX="100.0" layoutY="130.0" startX="-65.0" startY="-16.0" />
+            <Line fx:id="from1to2" endX="-39.0" endY="-34.0" layoutX="180.0" layoutY="62.0" startX="-144.0" startY="25.0" />
+            <Line fx:id="from1to3" endX="46.0" endY="-47.0" layoutX="54.0" layoutY="147.0" startX="-14.0" startY="-47.0" />
+         </children>
+      </Pane>
+      <Label fx:id="statusLabel" />
+   </children>
+</VBox>
