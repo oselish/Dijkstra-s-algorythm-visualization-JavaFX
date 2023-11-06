@@ -20,6 +20,8 @@ public class Dijkstra {
             return null;
         }
         else {
+            resetNodesData(nodes);
+            
             start.setWeight(0);
             start.addLastNode(start);
             Node current = start;
@@ -49,12 +51,8 @@ public class Dijkstra {
         Node finishNode = getNode(finishIndex);
         var distance = finishNode.getWeight();
         var result = new DijkstraResult(finishNode.getWay(), finishNode.getWeight());
-
-        for (var node : nodes) {
-            node.setWeight(Double.POSITIVE_INFINITY);
-            node.isVisited = false;
-            node.setWay(new Vector<>());
-        }
+        
+        resetNodesData(nodes);
 
 
         if (distance == Double.POSITIVE_INFINITY) {
@@ -70,5 +68,13 @@ public class Dijkstra {
                 return node;
         }
         return null;
+    }
+    
+    private void resetNodesData(Node[] nodes) {
+        for (var node : nodes) {
+            node.setWeight(Double.POSITIVE_INFINITY);
+            node.isVisited = false;
+            node.setWay(new Vector<>());
+        }
     }
 }
